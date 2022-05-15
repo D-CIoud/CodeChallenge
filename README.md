@@ -14,12 +14,14 @@ Esta nos apoya a tener una sintaxis más limpia y ordenada, es decir digamos ten
 
 Jest
 Esta herramienta nos permite realizar pruebas unitarias(npm test test/RUTADELARCHIVO.test.js)  para nuestros procesos, es decir crear un usuario, recuperar datos, validar objetos etc. de forma más sencilla, gracias a esta podemos validar que nuestros procesos estén funcionando de manera correcta además de que es necesario siempre realizar pruebas a cada componente que estemos por liberar,
+<br/>
 
 Explica el diseño de tus componentes.
 Componentes
 La aplicación en este caso debe cumplir con el fin de obtener 3 endpoints de consulta con ciertos filtros/criterios, para ello creee una carpeta llamada Lib y dentro de ella divide en 3 carpetas mis componentes, tenemos la carpeta Class, en ella genere un archivo llamado VisualPartners.js en el cual genere la lógica para cumplir con cada uno de los 3 requerimientos solicitados, dentro de este archivo se puede ver la lógica con la que trabaje. <br/>
 
 Dentro de la carpeta Controllers genere un archivo VisualPartnersController.js, este archivo se encarga de mandar a llamar las acciones que se encuentran en VisualPartners.js en la carpeta de Class, y este archivo de VisualPartnersController.js se comunica directamente con los EndPoints.
+
 <br/>
 En la carpeta Utils genere un archivo llamado Reader.js, el cual se encarga de leer todos los datos contenidos en el archivo visualpartners.json el cual estamos usando como DB.
 
@@ -34,12 +36,13 @@ Así mismo dentro de la carpeta .github/workflows se genero un archivo llamado T
 Ahora bien como funciona nuestra consulta de API a sus endpoints?
 Bueno se nos solicito generar 3 endpoints y su respectiva consulta se hace de la forma siguiente:<br/>
 *1 - Consultar todos los Partner's registrados el cual se consulta de la siguiente forma:
-
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/36202151/168485639-306bc03a-8c13-476e-bb27-7a1f1d185b10.png">
 
 *2 - Obtener los Email's de todos los Partner's que tengan una certificación validada:
+<img width="957" alt="image" src="https://user-images.githubusercontent.com/36202151/168485657-fdeab32c-ddb8-4469-af8a-09e9e622d093.png">
 
 *3 - Obtener todos los Partner's que tengan un valor en sus créditos mayor a 500:
-
+<img width="913" alt="image" src="https://user-images.githubusercontent.com/36202151/168485665-a2c190bc-8d96-4e1d-81c1-49bb80bdf850.png">
 
 Y bueno con esas SS adjuntas se muestra el como hacer su respectiva consulta dependiendo de lo que él usuario desee obtener. <br/>
 
